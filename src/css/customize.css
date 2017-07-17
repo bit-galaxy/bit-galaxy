@@ -1,0 +1,101 @@
+body {
+  font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+#customize {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #333;
+  color: #ddd;
+}
+
+#customize-title {
+  margin-top: 5vh;
+  font-size: 10vh;
+  line-height: 10vh;
+}
+
+.text {
+  cursor: default;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.title {
+  margin-top: 3vh;
+  font-size: 5vh;
+  line-height: 5vh;
+}
+
+.subtitle {
+  margin-top: 1vh;
+  font-size: 3vh;
+  line-height: 3vh;
+  color: #bbb;
+}
+
+.default {
+  margin-top: .8vh;
+  font-size: 2.5vh;
+  line-height: 2.5vh;
+  color: #999;
+}
+
+#done,.display {
+  font-size: 3vh;
+  line-height: 2.5vh;
+  color: #bbb;
+}
+
+.slider {
+  margin-top: 2vh;
+  width: 60vh;
+}
+
+.display {
+  margin-top: .8vh;
+  width: 6vh;
+  border-radius: 2vh;
+  padding: .5vh;
+  box-shadow: 0 0 0 1px #bbb;
+}
+
+#title-divider {
+  width: 60vh;
+}
+
+#middle-divider {
+  width: 40vh;
+}
+
+.divider {
+  height: 1px;
+  margin-top: 2.5vh;
+  box-shadow: 0 1px 0 0 #999;
+}
+
+#done {
+  background: 0 0;
+  border: none;
+  margin-top: 4vh;
+  width: 15vh;
+  border-radius: 2vh;
+  padding: .8vh;
+  box-shadow: 0 0 0 1px #bbb;
+  outline: 0;
+  transition: all 150ms ease;
+}
+
+#done:hover {
+  background: #bbb;
+  color: #333;
+}
+
+#done:active {
+  background: #434343;
+  color: #c3c3c3;
+  box-shadow: 0 0 0 1px #c3c3c3, 0 0 5px 0 #c3c3c3;
+}
