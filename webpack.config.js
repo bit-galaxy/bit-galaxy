@@ -43,7 +43,7 @@ const config = {
   output: {
     path: __dirname,
     filename: 'build/bundle.js',
-    publicPath: '/',
+    publicPath: '/bit-galaxy',
   },
   plugins: (process.env.NODE_ENV === 'production') ? [
     ...standardPlugins,
