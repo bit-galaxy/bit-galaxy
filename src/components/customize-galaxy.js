@@ -74,7 +74,7 @@ const customizeGalaxy = () => {
   // -- Create customization interface --------------------------
   // ------------------------------------------------------------
   const createInterface = (customizeDiv) => {
-    document.getElementsByTagName('html')[0].style = 'background:#333;';
+    document.getElementsByTagName('html')[0].style.background = '#333';
     let customizePage = `<style type="text/css">${customizeCSS}</style>`
       + '<div id="customize-title" class="text">Customize</div>'
       + '<div id="title-divider" class="divider"></div>';
@@ -113,7 +113,7 @@ const customizeGalaxy = () => {
       hashData.customized = 1;
       setHashData(hashData);
       customizeDiv.innerHTML = '';
-      document.getElementsByTagName('html')[0].style = '';
+      document.getElementsByTagName('html')[0].style.background = '';
 
       cb();
     };
