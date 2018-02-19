@@ -1,6 +1,9 @@
 import getHashData from '../utils/get-hash-data';
 import setHashData from '../utils/set-hash-data';
 
+// TODO: add in test id when compiled in dev mode
+const ClientID = '9hwtjyz2k3fosgnfy8c994fwwkh1w2';
+
 const bitApiInterface = () => {
   // set globals
   const bitToURL = {};
@@ -21,7 +24,7 @@ const bitApiInterface = () => {
   // ------------------------------------------------------------
   const authorize = () => {
     window.location = 'https://api.twitch.tv/kraken/oauth2/authorize'
-      + '?client_id=9hwtjyz2k3fosgnfy8c994fwwkh1w2'
+      + `?client_id=${ClientID}`
       + '&redirect_uri=https://open-stream-visualizers.github.io/bit-galaxy/'
       + '&response_type=token'
       + '&scope=user_read';
@@ -34,7 +37,7 @@ const bitApiInterface = () => {
     new Promise((resolve, reject) => {
       const headers = new Headers();
       headers.append('Accept', 'application/vnd.twitchtv.v5+json');
-      headers.append('Client-ID', '9hwtjyz2k3fosgnfy8c994fwwkh1w2');
+      headers.append('Client-ID', ClientID);
       const init = {
         method: 'GET',
         headers,
@@ -99,7 +102,7 @@ const bitApiInterface = () => {
     new Promise((resolve, reject) => {
       const headers = new Headers();
       headers.append('Accept', 'application/vnd.twitchtv.v5+json');
-      headers.append('Client-ID', '9hwtjyz2k3fosgnfy8c994fwwkh1w2');
+      headers.append('Client-ID', ClientID);
       const init = {
         method: 'GET',
         headers,
