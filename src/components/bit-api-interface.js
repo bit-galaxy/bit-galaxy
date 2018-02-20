@@ -25,7 +25,7 @@ const bitApiInterface = () => {
   const authorize = () => {
     window.location = 'https://api.twitch.tv/kraken/oauth2/authorize'
       + `?client_id=${ClientID}`
-      + '&redirect_uri=https://open-stream-visualizers.github.io/bit-galaxy/'
+      + '&redirect_uri=https://bit-galaxy.github.io/bit-galaxy/'
       + '&response_type=token'
       + '&scope=user_read';
   };

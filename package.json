@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/open-stream-visualizers/bit-galaxy.git"
+    "url": "git+https://github.com/bit-galaxy/bit-galaxy.git"
   },
   "author": "Joe Denea",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/open-stream-visualizers/bit-galaxy/issues"
+    "url": "https://github.com/bit-galaxy/bit-galaxy/issues"
   },
-  "homepage": "https://github.com/open-stream-visualizers/bit-galaxy#readme",
+  "homepage": "https://github.com/bit-galaxy/bit-galaxy#readme",
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.2",
